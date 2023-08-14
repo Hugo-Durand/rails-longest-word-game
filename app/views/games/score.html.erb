@@ -1,0 +1,7 @@
+<h1>Result</h1>
+
+<%if params[:word].include? params[:letters].join() %>
+<p>Sorry but <%= params[:word] %> can't be built out of <%= params[:letters]%></p>
+<% end %>
+
+<%= link_to "un autre mot ?", "/new" %>
